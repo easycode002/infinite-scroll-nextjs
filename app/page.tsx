@@ -25,7 +25,8 @@ async function getPokeMon({ pageParam }: { pageParam: number }) {
     console.log(pokemon);
     return {
       ...pokemon,
-      imageUrl: image,    };
+      imageUrl: image,
+    };
   });
   return fillerd;
 }
@@ -57,7 +58,7 @@ export default function Home001() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hello,worldd</h1>
+      <h1 className="font-bold text-2xl border-b-4 border-red-400">Next infinte scroll</h1>
       <div className="w-full">
         {pokemons?.pages?.map((page) =>
           page.map(
